@@ -7,7 +7,10 @@ import "./App.css";
 const router = createBrowserRouter([
     { path: "/", element: <Home /> },
     { path: "/login", element: <Login /> },
-]);
+], {
+    basename: "/Movie-search-app",
+});
+
 
 const App = () => {
     return <RouterProvider router={router} />;
